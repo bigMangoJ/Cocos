@@ -15,7 +15,6 @@ enum eAttri {
     attack  = 1004,
     defen   = 1005,
 
-
 }
 
 enum eUnitType {
@@ -83,4 +82,16 @@ enum eMoveType {
     mLine    = 1,    // 直线运动
 }
 
-export { BATTLE_FRAME, eAttri, eComponent, eUnitType, eUnitGroup, eActionState, eActorState, eSkillTrigger, eRank, eAttackType, eMoveType, eTargetType }
+enum eSortType {
+    mNormal     = 0,
+    mLifeUp     = 1,    // 血量递增
+    mLifeDown   = 2,    // 血量递减
+    mMenaceUp   = 3,    // 威胁递增
+    mMenaceDown = 4,    // 威胁递减
+    mDisUp      = 5,    // 距离递增
+    mDisDown    = 6,    // 距离递减
+    mLifePerUp  = 7,    // 血量百分比递增
+    mLifePerDown= 8,    // 血量百分比递减
+}
+
+export { BATTLE_FRAME, eAttri, eComponent, eUnitType, eUnitGroup, eActionState, eActorState, eSkillTrigger, eRank, eAttackType, eMoveType, eTargetType, eSortType }
